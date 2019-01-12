@@ -543,6 +543,8 @@ h1{
 
     }
     .nav{
+      text-align: right;
+      margin-right: 45px;
       @include laptop{
         text-align: right;
         margin-right: 30px;

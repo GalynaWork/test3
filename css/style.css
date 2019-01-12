@@ -400,13 +400,16 @@ h1 {
       @media screen and (max-width: 991px) {
         .top header nav {
           margin-left: 0px; } }
-    @media screen and (max-width: 1200px) {
-      .top header .nav {
-        text-align: right;
-        margin-right: 30px; } }
-    @media screen and (max-width: 768px) {
-      .top header .nav {
-        display: none; } }
+    .top header .nav {
+      text-align: right;
+      margin-right: 45px; }
+      @media screen and (max-width: 1200px) {
+        .top header .nav {
+          text-align: right;
+          margin-right: 30px; } }
+      @media screen and (max-width: 768px) {
+        .top header .nav {
+          display: none; } }
     .top header nav a {
       font-family: "Skoda_pro_bold", sans-serif;
       font-size: 26px;
