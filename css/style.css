@@ -194,6 +194,12 @@ h1 {
     top: 12px;
     position: absolute;
     z-index: 9; }
+    @media screen and (max-width: 1200px) {
+      .top .logo {
+        margin-top: 0;
+        top: 5px;
+        width: 100px;
+        left: 10px; } }
     @media screen and (max-width: 991px) {
       .top .logo {
         width: 95px; } }
@@ -220,7 +226,7 @@ h1 {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-right: 4%;
+    margin-right: 2%;
     -webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
@@ -1812,5 +1818,28 @@ dl {
     margin-top: 10px; }
   .ru .faq h1 {
     font-size: 32px; } }
+
+.top .logo .scroll_header {
+  margin-top: 0;
+  top: -14px;
+  width: 84px;
+  left: 30px;
+  height: auto; }
+  @media screen and (max-width: 1200px) {
+    .top .logo .scroll_header {
+      top: 0px; } }
+  @media screen and (max-width: 991px) {
+    .top .logo .scroll_header {
+      width: 70px; } }
+  @media screen and (max-width: 768px) {
+    .top .logo .scroll_header {
+      left: 10px; } }
+
+.header {
+  padding-bottom: 17px; }
+
+@media screen and (max-width: 1200px) {
+  .top header.header {
+    padding-top: 22px; } }
 
 /*# sourceMappingURL=style.css.map */

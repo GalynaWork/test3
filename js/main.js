@@ -42,66 +42,66 @@ $(document).ready(function() {
     $('#how_works').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".how_it_works").offset().top-55
+            scrollTop: $(".how_it_works").offset().top-95
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.roadmap_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".roadmap").offset().top-55
+            scrollTop: $(".roadmap").offset().top-95
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.ourapp_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".our_app").offset().top-55
+            scrollTop: $(".our_app").offset().top-95
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.kmts_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".kmts").offset().top-55
+            scrollTop: $(".kmts").offset().top-95
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.team_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".team_wrapper").offset().top-190
+            scrollTop: $(".team_wrapper").offset().top-240
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.faq_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".faq").offset().top-55
+            scrollTop: $(".faq").offset().top-95
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.video_player_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".video_player").offset().top-55
+            scrollTop: $(".video_player").offset().top-95
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
     $('.partners_click').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".partners").offset().top-55
+            scrollTop: $(".partners").offset().top-115
         }, 1000);
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
 
 
@@ -109,17 +109,17 @@ $(document).ready(function() {
     $('.scroll').click(function (){
 
         $('html, body').animate({
-            scrollTop: $(".how_it_works").offset().top-55
+            scrollTop: $(".how_it_works").offset().top-95
         }, 1000)
     });
     $('.hamburger').on('click', function () {
         $('.full_menu').addClass('open');
-        $('.top .logo').css("z-index","3");
+        $('.top .logo').css("display","none");
 
     });
     $( '#close').on("click", function(){
         $('.full_menu').removeClass('open');
-        $('.top .logo').css("z-index","6");
+        $('.top .logo').css("display","block");
     });
 
     $(document).on('click','.js-videoPoster',function(ev) {
@@ -159,15 +159,25 @@ $(document).ready(function() {
 
         var winLocation = window.location;
         var loc = winLocation + "";
-        if(loc.indexOf("ru") != -1) {
+        if(loc.indexOf("/ru") != -1) {
             $(".language li a").prop("href", loc.replace("ru", "en"));
             $(".language li a").text("Ru");
         }
-        else if(loc.indexOf("en") != -1) {
+        else if(loc.indexOf("/en") != -1) {
             $(".language li a").prop("href", loc.replace("en", "ru"));
             $(".language li a").text("En");
         }
 
+    $(window).on('scroll', function(e) {
+        if ($(this).scrollTop() > 100) {
+        $('.top .logo').addClass('scroll_header');
+        $('header').addClass('header');}
+        else{
+            $('.top .logo').removeClass('scroll_header');
+            $('header').removeClass('header');
+        }
+
+    });
 
 
 });

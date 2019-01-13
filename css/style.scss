@@ -321,6 +321,12 @@ h1{
     top:12px;
     position: absolute;
     z-index: 9;
+    @include laptop{
+      margin-top: 0;
+      top: 5px;
+      width: 100px;
+      left: 10px;
+    }
 
     @include tablet{
       width: 95px;
@@ -341,7 +347,7 @@ h1{
     @include align-items(flex-end);
     @include flex-direction(column);
 
-    margin-right: 4%;
+    margin-right: 2%;
     @include justify-content(center);
     height: calc(100vh - 204px);
     padding-top: 92px;
@@ -2101,4 +2107,31 @@ dl{
       font-size: 32px;
     }
   }
+}
+.top .logo .scroll_header{
+  margin-top: 0;
+  top: -14px;
+  width: 84px;
+  left: 30px;
+
+  height: auto;
+  @include laptop{
+    top: 0px;
+  }
+  @include tablet{
+    width: 70px;
+  }
+  @include mobile{
+    left: 0px;
+  }
+}
+.header{
+  padding-bottom: 17px;
+}
+.top header.header{
+  @include laptop{
+    padding-top: 22px;
+  }
+
+
 }
