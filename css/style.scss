@@ -975,9 +975,9 @@ h1{
   background-size: cover;
   background-position: center;
   @include mobile{
-    background: url(../assets/images/bg_mob.jpg) no-repeat;
+    background: url(../assets/images/bg_team_mob.jpg) no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
   }
 
 }
@@ -1044,10 +1044,12 @@ h1{
       opacity: 0.3;
       font-size: 21px;
 
+
       @include laptop{
         font-size: 16px;
         width: 229px;
       }
+
     }
   }
   .text span{
@@ -1136,6 +1138,9 @@ h1{
     font-size: 20px;
     font-family: "Skoda_bold", sans-serif;
     line-height: 24px;
+    @include mobile{
+      opacity: 1;
+    }
 
 
   }
@@ -1155,6 +1160,12 @@ h1{
   @include flexbox();
   @include transition($transition);
   z-index: 1;
+  @include mobile{
+    background: url("../assets/images/hover_roadmap.png") no-repeat;
+    width: 195px;
+    height: 177px;
+    background-size: contain;
+  }
 
 
   p{
@@ -1456,9 +1467,9 @@ h1{
   @include mobile{
     padding-top: 30px;
     padding-bottom: 30px;
-    background: url("../assets/images/bg_mob.jpg") no-repeat;
+    background: url("../assets/images/bg_team_mob.jpg") no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
   }
   .team_wrapper{
     @include flexbox();

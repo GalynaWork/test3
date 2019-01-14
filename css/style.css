@@ -791,9 +791,9 @@ h1 {
   background-position: center; }
   @media screen and (max-width: 768px) {
     .kmts_roadmap {
-      background: url(../assets/images/bg_mob.jpg) no-repeat;
+      background: url(../assets/images/bg_team_mob.jpg) no-repeat;
       background-size: cover;
-      background-position: left; } }
+      background-position: center; } }
 
 .kmts.roadmap {
   padding-top: 115px; }
@@ -935,6 +935,9 @@ h1 {
     font-size: 20px;
     font-family: "Skoda_bold", sans-serif;
     line-height: 24px; }
+    @media screen and (max-width: 768px) {
+      .roadmap .text {
+        opacity: 1; } }
 
 .roadmap .roadmap_wrapper .road {
   margin-bottom: 45px; }
@@ -956,6 +959,12 @@ h1 {
   -webkit-transition: 450ms ease 0s;
   transition: 450ms ease 0s;
   z-index: 1; }
+  @media screen and (max-width: 768px) {
+    .road {
+      background: url("../assets/images/hover_roadmap.png") no-repeat;
+      width: 195px;
+      height: 177px;
+      background-size: contain; } }
   .road p {
     font-family: "skoda_pro_light1", sans-serif;
     margin: auto;
@@ -1214,9 +1223,9 @@ h1 {
     .team {
       padding-top: 30px;
       padding-bottom: 30px;
-      background: url("../assets/images/bg_mob.jpg") no-repeat;
+      background: url("../assets/images/bg_team_mob.jpg") no-repeat;
       background-size: cover;
-      background-position: left; } }
+      background-position: center; } }
   .team .team_wrapper {
     display: -webkit-box;
     display: -moz-box;
