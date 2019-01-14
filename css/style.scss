@@ -974,6 +974,11 @@ h1{
   background: url(../assets/images/bg_roadmap1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  @include mobile{
+    background: url(../assets/images/bg_mob.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
 
 }
 .kmts.roadmap{
@@ -1451,6 +1456,9 @@ h1{
   @include mobile{
     padding-top: 30px;
     padding-bottom: 30px;
+    background: url("../assets/images/bg_mob.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
   }
   .team_wrapper{
     @include flexbox();
@@ -2024,8 +2032,8 @@ dl{
     margin-bottom: 200px;
   }
   @include mobile{
-    margin-top: 87px;
-    margin-bottom: 100px;
+    margin-top: 167px;
+    margin-bottom: 230px;
     width: 180px;
   }
 }

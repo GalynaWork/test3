@@ -789,6 +789,11 @@ h1 {
   background: url(../assets/images/bg_roadmap1.jpg) no-repeat;
   background-size: cover;
   background-position: center; }
+  @media screen and (max-width: 768px) {
+    .kmts_roadmap {
+      background: url(../assets/images/bg_mob.jpg) no-repeat;
+      background-size: cover;
+      background-position: left; } }
 
 .kmts.roadmap {
   padding-top: 115px; }
@@ -1208,7 +1213,10 @@ h1 {
   @media screen and (max-width: 768px) {
     .team {
       padding-top: 30px;
-      padding-bottom: 30px; } }
+      padding-bottom: 30px;
+      background: url("../assets/images/bg_mob.jpg") no-repeat;
+      background-size: cover;
+      background-position: left; } }
   .team .team_wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -1754,8 +1762,8 @@ dl {
       margin-bottom: 200px; } }
   @media screen and (max-width: 768px) {
     .partners img {
-      margin-top: 87px;
-      margin-bottom: 100px;
+      margin-top: 167px;
+      margin-bottom: 230px;
       width: 180px; } }
 
 /*partners*/
@@ -1833,7 +1841,7 @@ dl {
       width: 70px; } }
   @media screen and (max-width: 768px) {
     .top .logo .scroll_header {
-      left: 10px; } }
+      left: 0px; } }
 
 .header {
   padding-bottom: 17px; }
